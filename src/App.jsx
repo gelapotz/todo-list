@@ -24,6 +24,9 @@ function App() {
             content="This is the content of my card."
             image=""
             />
+
+            {/* Footer */}
+            <Footer message="contact me at contact@mywebsite.com" />
         </>
     );
 }
