@@ -6,10 +6,10 @@ import { Card } from './components/Card';
 
 function App() {
     return (
-        // Header
         <>
+            {/* Header */}
             <Header title="Welcome to My Website!" message="Thanks for visiting my site." />
-            
+
             {/* Todo */}
             <TodoList todos={[
                 { id: 1, text: "Finish reading a book before 2026", completed: false },
@@ -18,11 +18,11 @@ function App() {
             ]} />
 
             {/* Card */}
-            <Card 
-            title="My Card Title"
-            subtitle="My Card Subtitle"
-            content="This is the content of my card."
-            image=""
+            <Card
+                title="My Card Title"
+                subtitle="My Card Subtitle"
+                content="This is the content of my card."
+                image="https://placecats.com/neo_2/300/200"
             />
 
             {/* Footer */}
@@ -30,3 +30,5 @@ function App() {
         </>
     );
 }
+
+export default App;
