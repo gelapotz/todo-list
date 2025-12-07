@@ -1,15 +1,14 @@
-// TodoList.jsx
-export function TodoList({ todos }) {
+export function TodoList(props) {
   let listContent;
 
-  if (todos.length === 0) {
+  if (props.todos.length === 0) {
     listContent = (
       <li key="empty" className="todo-list__empty">
         No tasks yet. Add your first TODO above.
       </li>
     );
   } else {
-    listContent = todos.map((item, i) => (
+    listContent = props.todos.map((item, i) => (
       <li key={"todo-" + i} className="todo-item">
         <input
           type="checkbox"
